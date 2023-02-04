@@ -1,0 +1,10 @@
+{
+    
+    "diagnostic.displayByAle": true,
+    "codeLens.enable": true,
+    "java.referencesCodeLens.enabled": true,
+    "java.implementationsCodeLens.enabled": true,
+    "java.completion.enabled": true
+
+}
+

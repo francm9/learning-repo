@@ -95,4 +95,3 @@ def check_fin(x, y, counter):
         print("You win")
     return fin
 
-play()

@@ -21,4 +21,25 @@ fn main() {
     println!("El valor es: {}", option.unwrap());
     option = Some(10);
     println!("El valor es: {}", option.unwrap());
+
+    //Prueba de match
+    let circulo = Figuras2::Circulo(2.0, 3.1415);
+    println!("El area es: {}", circulo.area());
+}
+
+enum Figuras2 {
+	Circulo(f64, f64),
+	Rectangulo(f64, f64),
+}
+impl Figuras2{
+    fn area(&self) -> f64{  //Aquí se debe usar como referencia para no perder el ownership
+	    match &self {       // A la hora de hacer la comparación se puede hacer con o sin &
+		    Figuras2::Circulo(radio, pi) => {
+	            radio * radio * pi	
+		    }
+		    Figuras2::Rectangulo(a, b) => {
+		        a * b	
+		    }
+	    }
+    }
 }

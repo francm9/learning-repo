@@ -23,8 +23,18 @@ fn main() {
     println!("El valor es: {}", option.unwrap());
 
     //Prueba de match
-    let circulo = Figuras2::Circulo(2.0, 3.1415);
+    let circulo: Figuras2;
+    
+    let test = 10;
+    match test {
+        1 => circulo = Figuras2::Circulo(1.0, 3.1415),
+        2 => circulo = Figuras2::Circulo(2.0, 3.1415),
+        _ => circulo = Figuras2::Circulo(10.0, 3.1415),
+    }
     println!("El area es: {}", circulo.area());
+
+    
+
 }
 
 enum Figuras2 {

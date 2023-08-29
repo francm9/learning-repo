@@ -12,42 +12,8 @@
 *   4. Mostrar una lista de las líneas del archivo que contienen el string.
 *
 */
-
-
+use grep_project::*;
 use std::fs::File;
-
-fn get_params() -> Vec<String> {
-    use std::env;
-    env::args().collect()
-}
-
-fn filter_file(pattern: &String, file: File) -> Vec<String>{
-    let mut text_lines: Vec<String> = vec![];
-    
-    use std::io::{self, BufRead};
-    
-    let file_lines: io::Result<io::Lines<io::BufReader<File>>> = Ok(io::BufReader::new(file).lines());
-
-    if let Ok(lines) = file_lines {
-        for line in lines {
-            if let Ok(line) = line {
-                if line.contains(pattern) {
-                    text_lines.push(line);
-                }
-            }
-        }
-    }
-
-    text_lines
-}
-
-fn show_lines(res: &Vec<String>){
-    for line in res {
-        println!("{}", line);
-    }
-}
-
-
 fn main() {
 
     //Usamos un vector de strings ya que tenemos varios strings como params.

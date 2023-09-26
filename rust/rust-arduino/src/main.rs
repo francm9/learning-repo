@@ -21,8 +21,6 @@ fn main() -> ! {
     let echo = pins.d4;                     //Por defecto es una entrada
 
     let timer1 = dp.TC1;
-    
-    let dh11 = pins.d8;
 
 
     loop {
@@ -54,5 +52,6 @@ fn main() -> ! {
         ).void_unwrap(); 
 
         arduino_hal::delay_ms(1000);
+
     }
 }

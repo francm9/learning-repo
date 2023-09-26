@@ -1,0 +1,10 @@
+C:\Users\Fran\Desktop\dev\Rust\rust-arduino\target\avr-atmega328p\debug\deps\arduino_hal-c2dd15d4fd31b261.rmeta: C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\lib.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\clock.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\delay.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\port\mod.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\port\uno.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\simple_pwm.rs
+
+C:\Users\Fran\Desktop\dev\Rust\rust-arduino\target\avr-atmega328p\debug\deps\arduino_hal-c2dd15d4fd31b261.d: C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\lib.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\clock.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\delay.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\port\mod.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\port\uno.rs C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\simple_pwm.rs
+
+C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\lib.rs:
+C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\clock.rs:
+C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\delay.rs:
+C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\port\mod.rs:
+C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\port\uno.rs:
+C:\Users\Fran\.cargo\git\checkouts\avr-hal-f3855d5807fdfd57\7dfa6d3\arduino-hal\src\simple_pwm.rs:

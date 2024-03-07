@@ -177,25 +177,27 @@ exog_2 = np.float_power(data, 0.75) + 50 + np.random.normal(scale=10)
 data_exog = pd.concat([data, exog_1, exog_2], axis=1)
 data_exog.columns = ['y', 'exog_1', 'exog_2']
 
-forecaster_exog = ForecasterAutoreg(
-    regressor=DecisionTreeRegressor(random_state=123),
-    lags=30
-)
+print(data_exog)
 
-forecaster_exog.fit(
-    y = data_exog.loc[train_start:train_end, 'y'],
-    exog= data_exog.loc[train_start:train_end, ['exog_1', 'exog_2']]
-)
+# forecaster_exog = ForecasterAutoreg(
+#     regressor=DecisionTreeRegressor(random_state=123),
+#     lags=30
+# )
 
-res_test_exog = forecaster_exog.predict(
-    steps=len(data_exog.loc[test_start:test_end]),
-    exog=data_exog.loc[test_start:test_end, ['exog_1', 'exog_2']]
-)
+# forecaster_exog.fit(
+#     y = data_exog.loc[train_start:train_end, 'y'],
+#     exog= data_exog.loc[train_start:train_end, ['exog_1', 'exog_2']]
+# )
 
-# Visualizar
-mpl.use('TkAgg')
-fig, ax = plt.subplots(figsize=(7,3))
-data_exog.loc[train_start:test_end, 'y'].plot(ax=ax, label='Test')
-res_test_exog.plot(ax=ax, label='Predict')
-ax.legend()
-plt.show()
+# res_test_exog = forecaster_exog.predict(
+#     steps=len(data_exog.loc[test_start:test_end]),
+#     exog=data_exog.loc[test_start:test_end, ['exog_1', 'exog_2']]
+# )
+
+# # Visualizar
+# mpl.use('TkAgg')
+# fig, ax = plt.subplots(figsize=(7,3))
+# data_exog.loc[train_start:test_end, 'y'].plot(ax=ax, label='Test')
+# res_test_exog.plot(ax=ax, label='Predict')
+# ax.legend()
+# plt.show()

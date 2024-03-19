@@ -198,8 +198,9 @@ dependencies = [
 
 [[package]]
 name = "paho-mqtt"
-version = "0.13.0-pre.0"
-source = "git+https://github.com/eclipse/paho.mqtt.rust.git?branch=master#5060d9e54ec4c4b8d807b18f480b939e359deb11"
+version = "0.12.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "19e405de34b835fb6457d8b0169eda21949f855472b3e346556af9e29fac6eb2"
 dependencies = [
  "async-channel",
  "crossbeam-channel",
@@ -214,7 +215,8 @@ dependencies = [
 [[package]]
 name = "paho-mqtt-sys"
 version = "0.9.0"
-source = "git+https://github.com/eclipse/paho.mqtt.rust.git?branch=master#5060d9e54ec4c4b8d807b18f480b939e359deb11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5e482419d847af4ec43c07eed70f5f94f87dc712d267aecc91ab940944ab6bf4"
 dependencies = [
  "cmake",
  "openssl-sys",

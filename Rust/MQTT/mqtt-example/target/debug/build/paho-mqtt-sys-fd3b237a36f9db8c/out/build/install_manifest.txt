@@ -1,0 +1,30 @@
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/MQTTAsync_publish.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/MQTTAsync_publish_time.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/MQTTAsync_subscribe.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/MQTTClient_publish.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/MQTTClient_publish_async.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/MQTTClient_subscribe.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/paho_c_pub.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/paho_c_sub.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/paho_cs_pub.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/paho_cs_sub.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/samples/pubsub_opts.c
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/CONTRIBUTING.md
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/epl-v20
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/edl-v10
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/README.md
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/share/doc/Eclipse Paho C/notice.html
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/lib/libpaho-mqtt3c.a
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/lib/libpaho-mqtt3a.a
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/include/MQTTAsync.h
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/include/MQTTClient.h
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/include/MQTTClientPersistence.h
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/include/MQTTProperties.h
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/include/MQTTReasonCodes.h
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/include/MQTTSubscribeOpts.h
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/include/MQTTExportDeclarations.h
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/lib/libpaho-mqtt3cs.a
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/lib/libpaho-mqtt3as.a
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfig.cmake
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfig-debug.cmake
+/home/devfran/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-fd3b237a36f9db8c/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfigVersion.cmake

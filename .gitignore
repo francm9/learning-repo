@@ -1,4 +1,4 @@
-**/node_modules
+
 
 #RUST
 **/target
@@ -6,3 +6,10 @@
 
 #Flutter
 Flutter/flutter
+
+#Python
+**/__pycache__
+
+#Next.js
+**/.next
+**/node_modules

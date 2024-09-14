@@ -4,3 +4,5 @@
 **/target
 **/.cargo
 
+#Flutter
+Flutter/flutter

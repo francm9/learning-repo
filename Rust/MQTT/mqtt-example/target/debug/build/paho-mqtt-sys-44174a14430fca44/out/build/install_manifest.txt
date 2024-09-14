@@ -1,0 +1,30 @@
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/MQTTAsync_publish.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/MQTTAsync_publish_time.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/MQTTAsync_subscribe.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/MQTTClient_publish.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/MQTTClient_publish_async.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/MQTTClient_subscribe.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/paho_c_pub.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/paho_c_sub.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/paho_cs_pub.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/paho_cs_sub.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/samples/pubsub_opts.c
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/CONTRIBUTING.md
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/epl-v20
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/edl-v10
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/README.md
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/share/doc/Eclipse Paho C/notice.html
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/lib/libpaho-mqtt3c.a
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/lib/libpaho-mqtt3a.a
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/include/MQTTAsync.h
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/include/MQTTClient.h
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/include/MQTTClientPersistence.h
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/include/MQTTProperties.h
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/include/MQTTReasonCodes.h
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/include/MQTTSubscribeOpts.h
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/include/MQTTExportDeclarations.h
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/lib/libpaho-mqtt3cs.a
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/lib/libpaho-mqtt3as.a
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfig.cmake
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfig-debug.cmake
+/Users/dev-francm/Documents/dev/Rust/MQTT/mqtt-example/target/debug/build/paho-mqtt-sys-44174a14430fca44/out/lib/cmake/eclipse-paho-mqtt-c/eclipse-paho-mqtt-cConfigVersion.cmake

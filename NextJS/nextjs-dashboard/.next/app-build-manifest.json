@@ -1,19 +1,15 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/dashboard/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+<<<<<<< HEAD
       "static/chunks/app/dashboard/page.js"
     ],
     "/dashboard/layout": [
@@ -31,6 +27,9 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
+=======
+      "static/chunks/app/page.js"
+>>>>>>> origin/node
     ]
   }
 }

@@ -20,4 +20,4 @@ URL = "https://api3.openbankproject.com/oauth/initiate"
 
 # Se solicita un request token
 res = request_token()
-print(res.text)
+print(res)

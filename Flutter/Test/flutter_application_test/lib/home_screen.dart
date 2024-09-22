@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'footer.dart';
 
@@ -27,7 +26,26 @@ class _MyHomePageState extends State<MyHomePage> {
             (
               children: 
               [
-                Text('Pantalla principal'),
+                Row
+                (
+                  children: 
+                  [
+                    Padding
+                    (
+                      padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+                      child: Text
+                      (
+                        'Bienvenida de nuevo piti', 
+                        style: TextStyle
+                        (
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                Divider()
               ],
             ),
           ),

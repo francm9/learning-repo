@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_test/utils/appcolors.dart';
+
+import 'package:flutter_application_test/widgets/custom_styled_container.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -38,101 +39,42 @@ class _MyHomePageState extends State<MyHomePage> {
                 borderRadius: BorderRadius.circular(15),
               ),
             ),
-      
-            Positioned
+
+            const CustomStyledContainer
             (
-              top: 284,
-              left: 72,
-              child: Container
-              (
-                width: 249, 
-                height: 63, 
-                decoration: BoxDecoration(
-                  color: AppColors.pink50,
-                  borderRadius: BorderRadius.circular(10), 
-                  boxShadow: 
-                  [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 5,
-                      blurRadius: 5,
-                    ),
-                  ],
-                ),
-              ),
+              height: 63, 
+              width: 249, 
+              top: 284, 
+              left: 72, 
+              child: Text('texto')
             ),
 
-            Positioned
+            const CustomStyledContainer
             (
-              top: 388,
-              left: 27,
-              child: Container
-              (
-                width: 344, 
-                height: 170, 
-                decoration: BoxDecoration
-                (
-                  color: AppColors.pink50,
-                  borderRadius: BorderRadius.circular(10), 
-                  boxShadow: 
-                  [
-                    BoxShadow
-                    (
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 5,
-                      blurRadius: 5,
-                    ),
-                  ],
-                ),
-              ),
+              height: 170, 
+              width: 344, 
+              top: 388, 
+              left: 27, 
+              child: Text('texto')
             ),
 
-            Positioned
+            const CustomStyledContainer
             (
-              top: 593,
-              left: 27,
-              child: Container
-              (
-                width: 149, 
-                height: 208, 
-                decoration: BoxDecoration(
-                  color: AppColors.pink50,
-                  borderRadius: BorderRadius.circular(10), 
-                  boxShadow: 
-                  [
-                    BoxShadow
-                    (
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 5,
-                      blurRadius: 5,
-                    ),
-                  ],
-                ),
-              ),
+              height: 208, 
+              width: 159, 
+              top: 593, 
+              left: 27, 
+              child: Text('texto')
             ),
 
-            Positioned
+            const CustomStyledContainer
             (
-              top: 593,
-              left: 212,
-              child: Container
-              (
-                width: 159, 
-                height: 208, 
-                decoration: BoxDecoration(
-                  color: AppColors.pink50,
-                  borderRadius: BorderRadius.circular(10), 
-                  boxShadow: 
-                  [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.2),
-                      spreadRadius: 5,
-                      blurRadius: 5,
-                    ),
-                  ],
-                ),
-              ),
-            ),
+              height: 208, 
+              width: 159, 
+              top: 593, 
+              left: 212, 
+              child: Text('texto')
+            )
             
           ],
         ),

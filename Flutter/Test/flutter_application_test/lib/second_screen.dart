@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'footer.dart';
+import 'widgets/footer.dart';
 
 class SecondScreen extends StatefulWidget {
   const SecondScreen({super.key});

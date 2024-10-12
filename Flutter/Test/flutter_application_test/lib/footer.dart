@@ -1,6 +1,45 @@
 import 'package:flutter/material.dart';
 import 'utils/appcolors.dart';
 
+class FooterElement extends StatelessWidget
+{
+  const FooterElement({super.key, required this.icon, required this.text, required this.onPressed, required this.focusIcon});
+
+  final IconData icon;
+  final String text;
+  final bool focusIcon;
+  final Function() onPressed;
+
+  @override
+  Widget build(BuildContext context) 
+  {
+    return Column
+    (
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: 
+      [
+        IconButton
+        (
+          icon: Icon(icon),
+          color: focusIcon ? Colors.grey : Colors.white,
+          iconSize: 38,
+          onPressed: onPressed,
+        ),
+        Text
+        (
+          text, 
+          style: TextStyle
+          (
+            color: focusIcon
+                ? Colors.grey 
+                : Colors.white
+          )
+        )
+      ],
+    );
+  }
+}
+
 class Footer extends StatelessWidget
 {
   const Footer({super.key, required this.focusIcon});
@@ -13,56 +52,45 @@ class Footer extends StatelessWidget
     return Container
     (
       color: AppColors.pink100,
-      height: 100,
+      height: 95,
       child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: 
       [
-        IconButton
+        FooterElement
         (
-          icon: const Icon(Icons.home),
-          color: focusIcon == 0 ? Colors.grey : Colors.white,
-          iconSize: 44,
+          icon: Icons.home,
+          text: 'Home', 
           onPressed: () 
           {
             debugPrint(ModalRoute.of(context)?.settings.name);
             ModalRoute.of(context)?.settings.name != '/' ? Navigator.pushNamed(context,'/') : null;
           },
+          focusIcon: focusIcon == 0
         ),
-
-        IconButton
+        FooterElement
         (
-          icon: const Icon(Icons.search),
-          color: focusIcon == 1 ? Colors.grey : Colors.white,
-          iconSize: 40,
+          icon: Icons.water,
+          text: 'Data', 
+          onPressed: () 
+          {
+            debugPrint(ModalRoute.of(context)?.settings.name);
+            ModalRoute.of(context)?.settings.name != '/' ? Navigator.pushNamed(context,'/') : null;
+          },
+          focusIcon: focusIcon == 2
+        ),
+        FooterElement
+        (
+          icon: Icons.settings, 
+          text: 'Settings',
           onPressed: () 
           {
             debugPrint(ModalRoute.of(context)?.settings.name);
             ModalRoute.of(context)?.settings.name != '/second' ? Navigator.pushNamed(context,'/second') : null;
           },
+          focusIcon: focusIcon == 1
         ),
 
-        IconButton
-        (
-          icon: const Icon(Icons.add_alarm),
-          color: focusIcon == 2 ? Colors.grey : Colors.white,
-          iconSize: 40,
-          onPressed: () 
-          {
-            // Acción al hacer clic en el icono de configuración
-          },
-        ),
-
-        IconButton
-        (
-          icon: const Icon(Icons.settings),
-          color: focusIcon == 3 ? Colors.grey : Colors.white,
-          iconSize: 40,
-          onPressed: () 
-          {
-            // Acción al hacer clic en el icono de configuración
-          },
-        ),
       ],
     ),
     );

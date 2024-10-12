@@ -64,12 +64,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
             Positioned
             (
-              top: 390,
-              left: 15,
+              top: 388,
+              left: 27,
               child: Container
               (
-                width: 363, 
-                height: 169, 
+                width: 344, 
+                height: 170, 
                 decoration: BoxDecoration
                 (
                   color: AppColors.pink50,
@@ -90,11 +90,11 @@ class _MyHomePageState extends State<MyHomePage> {
             Positioned
             (
               top: 593,
-              left: 15,
+              left: 27,
               child: Container
               (
-                width: 151, 
-                height: 231, 
+                width: 149, 
+                height: 208, 
                 decoration: BoxDecoration(
                   color: AppColors.pink50,
                   borderRadius: BorderRadius.circular(10), 
@@ -114,11 +114,11 @@ class _MyHomePageState extends State<MyHomePage> {
             Positioned
             (
               top: 593,
-              left: 226,
+              left: 212,
               child: Container
               (
-                width: 152, 
-                height: 231, 
+                width: 159, 
+                height: 208, 
                 decoration: BoxDecoration(
                   color: AppColors.pink50,
                   borderRadius: BorderRadius.circular(10), 

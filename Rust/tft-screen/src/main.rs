@@ -13,8 +13,6 @@
 pub mod st7735;
 pub mod spi;
 
-use arduino_hal::delay_ms;
-
 use crate::spi::spi::SPI;
 use crate::st7735::st7735::ST7735S;
 
@@ -35,10 +33,9 @@ fn main() ->  !
     let spi = SPI::new(sck, sda, cs);
     let mut display = ST7735S::new(spi, dc, rst);
 
-    // display.reset();
-    display.write_command(0x28);
-    delay_ms(5000);
-    display.write_command(0x29);
+    display.init();
+
+    display.write_data(0x28);
 
     loop {
         

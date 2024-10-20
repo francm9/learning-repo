@@ -1,12 +1,12 @@
 [package]
-name = "screen-tests"
+name = "tft-screen"
 version = "0.1.0"
 authors = ["francm9 <francano368@uma.es>"]
 edition = "2021"
 license = "MIT OR Apache-2.0"
 
 [[bin]]
-name = "screen-tests"
+name = "tft-screen"
 test = false
 bench = false
 

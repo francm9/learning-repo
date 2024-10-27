@@ -16,6 +16,14 @@ pub mod spi;
 use crate::spi::spi::SPI;
 use crate::st7735::st7735::ST7735S;
 
+// Definición de algunos colores básicos
+const BLACK: u16 = 0x0000;
+const WHITE: u16 = 0xFFFF;
+const RED: u16 = 0xF800;
+const GREEN: u16 = 0x07E0;
+const BLUE: u16 = 0x001F;
+const YELLOW: u16 = 0xFFE0;
+
  #[arduino_hal::entry]
 fn main() ->  ! 
 {
@@ -34,11 +42,15 @@ fn main() ->  !
     let mut display = ST7735S::new(spi, dc, rst);
 
     display.init();
+    display.clear(BLACK);
 
-    display.write_data(0x28);
+    display.draw_text(10, 10, "Eres", WHITE);
+    display.draw_text(10, 20, "Super", WHITE);
+    display.draw_text(10, 30, "Bonita", WHITE);
+    display.draw_text(10, 40, "Piti", WHITE);
 
     loop {
-        
+        arduino_hal::delay_ms(1000);
     }
 }
 

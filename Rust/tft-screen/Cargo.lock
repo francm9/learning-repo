@@ -3,6 +3,16 @@
 version = 3
 
 [[package]]
+name = "aht20-driver"
+version = "1.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d71585058621677250a5493532187c25b1f00772f78c1eff8e9c3f9708696f6f"
+dependencies = [
+ "crc-any",
+ "embedded-hal 0.2.7",
+]
+
+[[package]]
 name = "arduino-hal"
 version = "0.1.0"
 source = "git+https://github.com/rahix/avr-hal?rev=3e362624547462928a219c40f9ea8e3a64f21e5f#3e362624547462928a219c40f9ea8e3a64f21e5f"
@@ -85,6 +95,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "crc-any"
+version = "2.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a62ec9ff5f7965e4d7280bd5482acd20aadb50d632cf6c1d74493856b011fa73"
+
+[[package]]
 name = "critical-section"
 version = "1.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -121,6 +137,12 @@ name = "embedded-storage"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "723dce4e9f25b6e6c5f35628e144794e5b459216ed7da97b7c4b66cdb3fa82ca"
+
+[[package]]
+name = "format_no_std"
+version = "1.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9ae45e32b0bfe2c62c805f8e87027b5aa08562000326edbc5b421ab6d92873a7"
 
 [[package]]
 name = "nb"
@@ -188,8 +210,10 @@ dependencies = [
 name = "tft-screen"
 version = "0.1.0"
 dependencies = [
+ "aht20-driver",
  "arduino-hal",
  "embedded-hal 1.0.0",
+ "format_no_std",
  "nb 1.1.0",
  "panic-halt",
  "proc-macro2",

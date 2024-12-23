@@ -1,3 +1,4 @@
+// Configurar la pantalla
 #![no_std]
 #![no_main]
 
@@ -14,11 +15,9 @@ pub mod st7735;
 pub mod spi;
 pub mod aht20;
 
-use crate::spi::spi::SPI;
-use crate::st7735::st7735::ST7735S;
-use aht20_driver::AHT20;
-use arduino_hal::pac::ac::acsr::W;
-// use defmt_rtt as _;
+use st7735::st7735::ST7735S;
+use spi::spi::SPI;
+use aht20::aht20::AHT20;
 
 // Definición de algunos colores básicos
 const BLACK: u16 = 0x0000;
@@ -28,12 +27,14 @@ const GREEN: u16 = 0x07E0;
 const BLUE: u16 = 0x001F;
 const YELLOW: u16 = 0xFFE0;
 
- #[arduino_hal::entry]
-fn main() ->  ! 
-{
+#[arduino_hal::entry]
+fn main() -> ! {
     // Inicializar los pines
     let dp = arduino_hal::Peripherals::take().unwrap();
     let pins = arduino_hal::pins!(dp);
+
+    // Inicializar el puerto serie
+    let mut serial = arduino_hal::default_serial!(dp, pins, 57600);
 
     // Configurar la pantalla
     let dc = pins.d9.into_output();
@@ -57,22 +58,25 @@ fn main() ->  !
     let sda = pins.a4.into_pull_up_input();
     let scl = pins.a5.into_pull_up_input();
 
-    let mut i2c = arduino_hal::I2c::new(dp.TWI, sda, scl, 115200 as u32);
-    let mut aht20 = AHT20::new(i2c, 0x38);
+    let i2c = arduino_hal::I2c::new(dp.TWI, sda, scl, 115200 as u32);
+    let mut aht20 = AHT20::new(i2c, Some(0x38));
 
-    let mut delay = arduino_hal::Delay::new();
-    let mut aht20_init = aht20.init(&mut delay).unwrap();
     display.draw_text(10, 60, "Prueba", WHITE);
-    let data = aht20_init.measure(&mut delay).unwrap();
+
+    aht20.begin();
+    let data = aht20.read_data();
     let mut buf = [0u8; 64]; 
-    let s = format_no_std::show(&mut buf, format_args!("Temperatura {}", data.temperature as u32)).unwrap();
+
+    let s = format_no_std::show(&mut buf, format_args!("Temperatura {}", data.0 as u32)).unwrap();
     display.draw_text(10, 50, s, WHITE);
 
+    // Print temperature to serial monitor
+    ufmt::uwriteln!(&mut serial, "Temperatura: {}", data.0 as u32);
+
     loop {
-        
-
-
         arduino_hal::delay_ms(1000);
+        let data = aht20.read_data();
+        ufmt::uwriteln!(&mut serial, "Temperatura: {}", data.0 as u32);
     }
 }
 

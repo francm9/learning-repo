@@ -10,15 +10,15 @@ import time
 import requests
 from bs4 import BeautifulSoup
 
-def obtener_productos_amazon(url):
+def obtener_productos_amazon(url, params):
     # Cabeceras para simular un navegador real
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept-Language': 'es-ES,es;q=0.9,en;q=0.8'
+        "User-Agent": "MMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+        "Accept-Language": "es-ES,es;q=0.9"
     }
     
     # Realizar la petición GET
-    respuesta = requests.get(url, headers=headers)
+    respuesta = requests.get(url, params=params, headers=headers)
     
     # Verificar si la petición fue exitosa
     if respuesta.status_code == 200:
@@ -49,18 +49,23 @@ def obtener_productos_amazon(url):
         return []
 
 # URL de búsqueda de auriculares en Amazon España
-url = "https://www.amazon.es/s?k=ordenadore&__mk_es_ES=ÅMÅŽÕÑ&ref=nb_sb_noss"
+base_url = "https://www.amazon.com/s"
+search_query = "laptop"  # Cambia esto por tu término de búsqueda
+params = {
+    "k": search_query,
+    "ref": "nb_sb_noss"
+}
 
 # Obtener los productos
-productos = obtener_productos_amazon(url)
+productos = obtener_productos_amazon(base_url, params)
+
+
 
 # Imprimir los productos obtenidos
-for producto in productos:
-    print(f"Título: {producto['titulo']}")
-    print(f"Precio: {producto['precio']}")
-    print("---")
-
-print("Fin de busqueda")
-
-# Esperar un poco entre peticiones para no sobrecargar el servidor
-time.sleep(2)
+if len(productos) == 0:
+    print("No se han encontrado productos")
+else:
+    for producto in productos:
+        print(f"Título: {producto['titulo']}")
+        print(f"Precio: {producto['precio']}")
+        print("---")

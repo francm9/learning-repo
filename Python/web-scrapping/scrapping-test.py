@@ -6,7 +6,6 @@
 - Selenium: Perfecta para automatizar interacciones con navegadores web y extraer contenido dinámico generado por JavaScript
 """
 
-import time
 import requests
 from bs4 import BeautifulSoup
 

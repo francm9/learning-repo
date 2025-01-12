@@ -7,7 +7,7 @@
 """
 
 import requests
-from bs4 import BeautifulSoup
+from amazon_scrapper import AmazonScrapper
 
 def obtener_productos_amazon(url, params):
     # Cabeceras para simular un navegador real
@@ -15,34 +15,18 @@ def obtener_productos_amazon(url, params):
         "User-Agent": "MMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
         "Accept-Language": "es-ES,es;q=0.9"
     }
-    
+
     # Realizar la petición GET
     respuesta = requests.get(url, params=params, headers=headers)
-    
+
     # Verificar si la petición fue exitosa
     if respuesta.status_code == 200:
-        # Parsear el contenido HTML
-        soup = BeautifulSoup(respuesta.content, 'html.parser')
-        # Encontrar todos los elementos de producto
-        productos = soup.find_all('div', {'class': 'a-section a-spacing-base'})
-        lista_productos = []
-        for producto in productos:
-            # Extraer el título del producto
-            titulo = producto.find('div', {'data-cy': 'title-recipe'})
-            if titulo:
-                titulo = producto.find('h2').span.string
-            
-            # Extraer el precio del producto
-            # precio = producto.find('span', {'class': 'a-price a-text-price'})
-            precio = producto.find('span', {'class': 'a-offscreen'})
-            if precio:
-                precio = precio.text.strip()
-            
-            # Añadir el producto a la lista
-            if titulo and precio:
-                lista_productos.append({'titulo': titulo, 'precio': precio})
-        
-        return lista_productos
+        # Crear un objeto de la clase AmazonScrapper
+        scrapper = AmazonScrapper()
+        # Llamar al método scrap con el contenido HTML de la página
+        scrapper.scrap(respuesta.text)
+        # Devolver los productos obtenidos
+        return scrapper.get_products()
     else:
         print(f"Error al acceder a la página: {respuesta.status_code}")
         return []
@@ -58,13 +42,9 @@ params = {
 # Obtener los productos
 productos = obtener_productos_amazon(base_url, params)
 
-
-
 # Imprimir los productos obtenidos
 if len(productos) == 0:
     print("No se han encontrado productos")
 else:
     for producto in productos:
-        print(f"Título: {producto['titulo']}")
-        print(f"Precio: {producto['precio']}")
-        print("---")
+        print(producto)

@@ -16,18 +16,36 @@ class AmazonScrapper:
     def parse_products(self, parsed_html):
         """Devuelve una lista con los productos no parseados"""
         return parsed_html.find_all('div', {'class': 'a-section a-spacing-base'})
+
     def get_product_name(self, product):
         """Devuelve el nombre del producto"""
-        return product.find('div', {'data-cy': 'title-recipe'}).find('h2').span.string
+        titulo = product.find('div', {'data-cy': 'title-recipe'})
+        if titulo:
+            return titulo.find('h2').span.string
+        return "No encontrado"
+
     def get_price(self, product):
         """Devuelve el precio del producto"""
-        return product.find('span', {'class': 'a-offscreen'}).text.strip()
+        precio = product.find('span', {'class': 'a-offscreen'})
+        if precio:
+            return precio.text.strip()
+        return 0.0
+
     def get_description(self, product):
         """Devuelve la descripción del producto"""
-        return product.find('span', {'class': 'a-offscreen'}).text.strip()
+        return "Descripcion no encontrada"
+
     def get_review(self, product):
         """Devuelve la valoración del producto"""
-        return product.find('span', {'class': 'a-offscreen'}).text.strip()
+        review = product.find('i', {'data-cy': 'reviews-ratings-slot'})
+        if review:
+            return float(review.find('span').string.split()[0])
+        return 0.0
+
+    def get_products(self):
+        """Devuelve una lista con los productos"""
+        return self._products
+
     def scrap(self, html):
         """Scrapea el html pasado por parámetro y devuelve una lista de productos"""
         # Parseamos el contenido HTML
@@ -38,12 +56,10 @@ class AmazonScrapper:
 
         # Iteramos sobre los productos no parseados y creamos los objetos Product
         for product in non_parsed_products:
-            product = Product(self.get_product_name(product),
+            parsed_product = Product(self.get_product_name(product),
                               self.get_price(product),
                               self.get_description(product),
                               self.get_review(product))
-            if product.is_valid():
-                self._products.append(product)
-    def get_products(self):
-        """Devuelve una lista con los productos"""
-        return self._products
+
+            if parsed_product.is_valid():
+                self._products.append(parsed_product)
